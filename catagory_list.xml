@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/catagoryListItem"
+    android:background="@drawable/catagory_outline"
+    android:layout_marginTop="8sp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:gravity="center"
+        android:weightSum="6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/catgoryImageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/grocery" />
+
+    <LinearLayout
+        android:padding="8sp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="6"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="8sp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/catagoryOfferTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UP TO 71%OFF"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/red"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/catagoryTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Grocery &amp; Staples"/>
+
+        <TextView
+            android:id="@+id/catagoryDescTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:fontFamily="@font/roboto_light"
+            android:text="New Launches, Pulses, Atta &amp; Flours, Rice &amp; Other Grains, Dry Fruits"
+            />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:background="#E9E9E9"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:id="@+id/catCollapseImageView"
+        android:layout_weight="1"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@mipmap/ic_expand" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_margin="10sp"
+        android:visibility="gone"
+        android:id="@+id/subCatRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>
